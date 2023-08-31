@@ -1,0 +1,2 @@
+# PythonDjangoCrudApi
+Bilgi Teknolojileri ve İletişim Kurumu (BTK) 'nda staj yaparken Python dili ve Django frameworkünü kullanarak yazmış olduğum crud api uygulaması. Kullanıcı oluşturma,silme,güncelleme ve listeleme işlemlerini yapabilirsiniz. Localde programın çalıştırılmasıyla MySql'le MariaDB üzerinden bir tablo olşturup bu tabloda verileri tuttum. Ön tarafta html'le genel iskeleti oluşturup üzerine css kısmında bootstrapten giydirdim.
