@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+  
+{% block title %}Yeni Kullanıcı Kayıdı{% endblock title %}
+  
+{% block content %}
+<div class="col-md-12">
+    <form method="POST" class="post-form" action="/update/{{kullanici.id}}">  
+    {% csrf_token %}  
+    <div class="container">   
+        <div class="col-12">  
+            <h3>Ayrıntıları Güncelle</h3>  
+        </div> 
+        <div class="mb-3"> 
+            <label>Kullanıcı ID:</label>  
+            <input type="text" class="form-control" name="id" id="id_id" required maxlength="20" value="{{ kullanici.id }}" readonly/>    
+        </div> 
+        <div class="mb-3"> 
+            <label>İsim:</label>  
+            <input type="text" class="form-control" name="name" id="id_name" required maxlength="100" value="{{ kullannici.name }}" />  
+        </div> 
+        <div class="mb-3"> 
+            <label>Email:</label>  
+            <input type="email" class="form-control" name="email" id="id_email" required maxlength="254" value="{{ kullanici.email }}" />  
+        </div> 
+        <div class="mb-3"> 
+            <label>Telefon:</label>  
+            <input type="text" class="form-control" name="contact" id="id_contact" required maxlength="15" value="{{ kullanici.contact }}" />  
+        </div> 
+        <div class="mb-3"> 
+            <button type="submit" class="btn btn-success btn-lg">Güncelle</button>  
+        </div> 
+    </div>  
+    </form>  
+{% endblock content %}  
